@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vepet Campinas | Dog Walker & Pet Sitter (Verônica)</title>
+    <title>Vepet Campinas | Verônica - Dog Walker & Pet Sitter</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
         .text-vepet { color: #FF7A00; }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
         .profile-shape { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        .map-container { filter: grayscale(10%) contrast(1.1); border-radius: 2rem; overflow: hidden; }
     </style>
 </head>
 <body class="bg-[#FDFCFB] text-slate-900">
@@ -24,103 +25,89 @@
                 <div class="w-10 h-10 bg-vepet rounded-xl flex items-center justify-center text-white shadow-lg">
                     <i class="fas fa-paw"></i>
                 </div>
-                <span class="text-2xl font-black tracking-tighter uppercase">VEPET<span class="font-light text-slate-400">CAMPINAS</span></span>
+                <span class="text-2xl font-black tracking-tighter uppercase italic text-slate-700">VEPET<span class="font-light text-vepet not-italic">CAMPINAS</span></span>
             </div>
-            <a href="https://wa.me/5519991410186" target="_blank" class="bg-vepet hover:scale-105 text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-xl shadow-orange-100 text-sm">
+            <a href="https://wa.me/5519991410186" target="_blank" class="bg-vepet hover:bg-orange-600 text-white px-6 py-3 rounded-full font-bold transition-all shadow-xl shadow-orange-100 text-sm">
                 AGENDAR AGORA
             </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Com a Foto da Verônica) -->
     <section class="pt-32 pb-20 px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div class="order-2 md:order-1">
-                <span class="inline-block px-4 py-1 bg-orange-100 text-vepet rounded-full text-xs font-bold tracking-widest mb-6 uppercase">Cuidados Profissionais em Campinas</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Seu pet com a atenção que ele <span class="text-vepet italic font-light">merece.</span>
+                <span class="inline-block px-4 py-1 bg-orange-100 text-vepet rounded-full text-xs font-bold tracking-widest mb-6 uppercase italic">Verônica Pet Care</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-[1.1] mb-6">
+                    Seu pet com a atenção de quem <span class="text-vepet italic font-light">realmente ama.</span>
                 </h1>
                 <p class="text-lg text-slate-600 leading-relaxed mb-10">
-                    Olá, eu sou a <strong>Verônica</strong>! Sou a fundadora da <strong>Vepet</strong> e apaixonada por animais. Ofereço Dog Walker e Pet Sitter com foco em bem-estar, enviando relatórios com fotos e vídeos para você acompanhar cada momento.
+                    Olá, eu sou a <strong>Verônica</strong>! Sou a fundadora da Vepet. Ofereço Dog Walker e Pet Sitter com relatórios em tempo real (fotos e vídeos) para que você acompanhe a felicidade do seu pet de onde estiver.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/5519991410186" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl shadow-green-100 flex items-center justify-center gap-3 hover:-translate-y-1 transition-all">
+                    <a href="https://wa.me/5519991410186" target="_blank" class="bg-green-500 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl shadow-green-100 flex items-center justify-center gap-3 hover:-translate-y-1 transition-all">
                         <i class="fab fa-whatsapp text-2xl"></i> Falar com a Verônica
                     </a>
                 </div>
             </div>
 
-            <!-- Foto da Verônica (Placeholder Profissional) -->
+            <!-- Foto da Verônica -->
             <div class="order-1 md:order-2 flex justify-center">
                 <div class="relative w-full max-w-sm">
                     <div class="absolute inset-0 bg-vepet profile-shape rotate-6 opacity-10 scale-110"></div>
-                    <!-- Nota: Para usar a foto real, basta fazer upload de uma foto no github e mudar o link abaixo -->
-                    <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=80&w=800" 
-                         alt="Verônica - Vepet" 
-                         class="relative z-10 w-full aspect-[4/5] object-cover profile-shape shadow-2xl border-[10px] border-white">
-                    <div class="absolute -bottom-6 -right-6 z-20 bg-white p-6 rounded-2xl shadow-xl border border-orange-50 text-center">
-                        <p class="text-vepet font-black text-3xl">5.0</p>
-                        <div class="flex text-yellow-400 text-[10px] mb-1">
+                    
+                    <!-- FOTO REAL: Substitua 'foto-veronica.jpg' pelo link da foto dela -->
+                    <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?auto=format&fit=crop&q=80&w=800" 
+                         alt="Verônica - Vepet Campinas" 
+                         class="relative z-10 w-full aspect-[4/5] object-cover profile-shape shadow-2xl border-[12px] border-white transition-transform hover:scale-[1.02]">
+                    
+                    <div class="absolute -bottom-8 -right-8 z-20 bg-white p-6 rounded-3xl shadow-2xl border border-orange-50 text-center animate-bounce">
+                        <p class="text-vepet font-black text-4xl leading-none italic">5.0</p>
+                        <div class="flex text-yellow-400 text-xs mb-1 justify-center">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
-                        <p class="text-[9px] uppercase font-bold text-slate-400">No Google Maps</p>
+                        <p class="text-[10px] uppercase font-bold text-slate-400">Google Maps</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Diferenciais Reais -->
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-            <div class="text-center">
-                <div class="w-16 h-16 bg-orange-50 text-vepet rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 shadow-sm">
-                    <i class="fas fa-camera"></i>
+    <!-- Mapa e Localização -->
+    <section class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="map-container shadow-2xl h-[450px]">
+                    <!-- Iframe Real da Vepet Campinas -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.765636049282!2d-47.0863032!3d-22.8851398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c7340d216d79%3A0xc3f58a9833f4a387!2sVepet%20-%20Dog%20Walker%20e%20Pet%20Sitter!5e0!3m2!1spt-BR!2sbr!4v1709424000000!5m2!1spt-BR!2sbr" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-                <h3 class="font-bold text-xl mb-3">Relatórios Diários</h3>
-                <p class="text-slate-500 text-sm">Fotos e vídeos em tempo real para você matar a saudade e ter tranquilidade.</p>
-            </div>
-            <div class="text-center">
-                <div class="w-16 h-16 bg-orange-50 text-vepet rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 shadow-sm">
-                    <i class="fas fa-heartbeat"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-3">Bem-estar Físico</h3>
-                <p class="text-slate-500 text-sm">Passeios planejados para gastar energia e manter a saúde do seu cão em dia.</p>
-            </div>
-            <div class="text-center">
-                <div class="w-16 h-16 bg-orange-50 text-vepet rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 shadow-sm">
-                    <i class="fas fa-shield-dog"></i>
-                </div>
-                <h3 class="font-bold text-xl mb-3">Segurança Total</h3>
-                <p class="text-slate-500 text-sm">Profissional capacitada para lidar com diferentes comportamentos e situações.</p>
-            </div>
-        </div>
-    </section>
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-extrabold text-slate-900 leading-tight">Onde a titia Verônica <br><span class="text-vepet">atende?</span></h2>
+                    <p class="text-lg text-slate-600">Minha base fica na região do <strong>Jardim Aurélia e Castelo</strong>, mas atendo os principais bairros de Campinas com pontualidade e segurança.</p>
+                    
+                    <ul class="grid grid-cols-2 gap-4 font-bold text-slate-700">
+                        <li><i class="fas fa-check-circle text-vepet mr-2"></i> Cambuí</li>
+                        <li><i class="fas fa-check-circle text-vepet mr-2"></i> Taquaral</li>
+                        <li><i class="fas fa-check-circle text-vepet mr-2"></i> Guanabara</li>
+                        <li><i class="fas fa-check-circle text-vepet mr-2"></i> N. Campinas</li>
+                    </ul>
 
-    <!-- Bairros Atendidos -->
-    <section class="py-24 bg-slate-900 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-extrabold mb-10 italic">Atendimento em Campinas / SP</h2>
-            <div class="flex flex-wrap justify-center gap-3">
-                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full font-bold hover:border-vepet transition-colors italic">Jardim Aurélia</span>
-                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full font-bold hover:border-vepet transition-colors italic">Castelo</span>
-                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full font-bold hover:border-vepet transition-colors italic">Cambuí</span>
-                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full font-bold hover:border-vepet transition-colors italic">Taquaral</span>
-                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full font-bold hover:border-vepet transition-colors italic">Guanabara</span>
-                <span class="px-6 py-3 bg-slate-800 border border-slate-700 rounded-full font-bold hover:border-vepet transition-colors italic">Nova Campinas</span>
+                    <div class="pt-6">
+                        <a href="https://maps.app.goo.gl/3CxFvS76dRJWaBMg9" target="_blank" class="inline-flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all">
+                            <i class="fas fa-location-arrow"></i> Como chegar pelo GPS
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p class="mt-10 text-slate-400 text-sm italic">Consulte disponibilidade para outros bairros próximos.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-12 bg-[#FDFCFB] border-t border-orange-100 text-center">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-center gap-6 mb-8 text-2xl text-slate-300">
-                <a href="https://www.instagram.com/vepetcampinas/" target="_blank" class="hover:text-vepet transition-colors"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p class="text-[10px] font-bold text-slate-300 uppercase tracking-[0.4em]">Vepet Campinas • Verônica Pet Care</p>
-        </div>
+        <p class="text-[10px] font-bold text-slate-300 uppercase tracking-[0.4em]">Vepet Campinas • Verônica • 19 99141-0186</p>
     </footer>
 
     <!-- WhatsApp Flutuante -->
